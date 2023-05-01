@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+
+
+        <div class="contact--container">
+
+            
+            <p>Welcome to our contact page! We're delighted to hear from you and eager to assist you in any way we can. Please use the following contact information to get in touch with us:</p>
+
+            <div class="mb-3 contact--form-container">
+                <h3>Contact Information:</h3>
+                <form action="/contact" method="post" class="contact--form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" name="email" class="form-control">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="text" name="phone" class="form-control">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="" rows="8" class="form-control"></textarea>
+                        <button type="submit" class="btn btn-md">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <p>
+                We value your feedback, questions, and comments. Whether you have a suggestion, a concern, or simply want to connect with us, we're here to listen and respond promptly.
+            <br>
+            <br>
+                If you have a question about our products or services, our friendly customer service team is ready to assist you. You can reach us via email or phone during our business hours, which are 9:00 - 17:00.
+            <br>
+            <br>
+                If you prefer to contact us through email, please provide a detailed message with your name, contact information, and the reason for your inquiry. We'll make sure to get back to you as soon as possible.
+            <br>
+            <br>
+                For urgent matters or immediate assistance, we recommend contacting us by phone. Our customer service representatives are available to provide you with timely support and resolve any issues you may have.
+            <br>
+            <br>
+                Thank you for your interest in reaching out to us. We look forward to hearing from you and serving you to the best of our abilities.
+            </p>
+        </div>
+
+    </div>
+
+<%- include("partials/footer") -%>

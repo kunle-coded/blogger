@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+
+<div class="content--container">
+
+    <div class="post--item">
+        <% postData.forEach(post => { %>
+            <img src="images/marjan-taghipour.jpg" class="feature-image">
+            <div class="content">
+            <h1> <%= post.title %> </h1>
+                <p> <%= post.content.substring(0, 430) %> ... </p>
+                <a href="/posts/<%= post.title %>"><button class="btn btn-md">Read more</button></a>
+                
+            </div>
+        <% }); %>
+    </div>
+
+</div>
+
+<%- include("partials/footer") -%>
+
